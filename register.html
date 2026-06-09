@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация | Orchidées</title>
+
+    <link href="https://fonts.cdnfonts.com/css/mango-vintage-personal-use-only" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/alice-2" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <link rel="icon" href="images/icon.png">
+</head>
+
+<body class="background-img">
+
+    <div class="logo text-center mt-2">
+        <h2 class="mb-0">Orchidées</h2>
+    </div>
+
+    <div class="formbox animation text-center mt-4 mb-5">
+        <div class="container">
+            <div class="row col-md-9 mb-md-3 mt-sm-0 mt-4 mx-auto">
+                <h1 class="mb-5">Регистрация</h1>
+                
+                <form id="regForm">
+                    <div class="name d-flex mb-2 mb-md-3">
+                        <div class="first form-floating flex-fill me-2">
+                            <input type="text" name="firstname" class="form-control" id="nameInput" placeholder="Имя" required>
+                            <label for="nameInput">Имя</label>
+                        </div>
+                        <div class="last form-floating flex-fill">
+                            <input type="text" name="lastname" class="form-control" id="nameInput2" placeholder="Фамилия" required>
+                            <label for="nameInput2">Фамилия</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-floating mb-2 mb-md-3">
+                        <input type="email" name="email" class="form-control" id="emailInput" placeholder="Email" required>
+                        <label for="emailInput">Электронная почта</label>
+                    </div>
+                    
+                    <div class="form-floating mb-2 mb-md-3">
+                        <input type="password" name="password" class="form-control" id="passwordInput" placeholder="Пароль" required>
+                        <label for="passwordInput">Пароль</label>
+                    </div>
+                    
+                    <div class="form-floating mb-2 mb-md-3">
+                        <input type="tel" name="phone" class="form-control" id="phoneInput" placeholder="Номер телефона" required>
+                        <label for="phoneInput">Номер телефона</label>
+                    </div>
+                    
+                    <div class="gender d-flex justify-content-evenly mb-2 mb-md-3">
+                        <label>Пол</label>
+                        <div class="male">
+                            <input type="radio" class="form-check-input" name="gender" id="maleRadio" value="Мужской" required>
+                            <label for="maleRadio">Мужской</label>
+                        </div>
+                        <div class="female">
+                            <input type="radio" class="form-check-input" name="gender" id="femaleRadio" value="Женский" required>
+                            <label for="femaleRadio">Женский</label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary w-100">Зарегистрироваться</button>
+                </form>
+
+                <p class="mt-4">Уже есть аккаунт? <a class="ms-1" href="login.html">Войти</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/register.js"></script>
+</body>
+</html>
